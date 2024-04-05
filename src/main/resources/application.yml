@@ -1,0 +1,24 @@
+spring:
+    application:
+        name: cicd-test2
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        password: Password1!
+        url: jdbc:mysql://43.200.184.246:3306/farmstory_4
+        username: abc1234
+
+    jpa:
+        database: mysql
+        hibernate:
+            ddl-auto: update
+            naming:
+                physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        properties:
+            hibernate:
+                format_sql: true
+                show_sql: true
+
+server:
+    port: 8080
+    servlet:
+        context-path: /cicd-test2
